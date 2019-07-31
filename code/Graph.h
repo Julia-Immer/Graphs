@@ -5,23 +5,11 @@
 #include <set>
 #include <string>
 #include <memory>
+#include <queue>
 #include "Edge.h"
 #include "Node.h"
 
-// Node colors are described at the bottom of the file.
-#define WHITE 1
-#define GRAY 2
-#define BLACK 3
-
-// Edge types are described at the bottom of the file.
-#define UNDISCOVERED_EDGE 9
-#define TREE_EDGE 10
-#define BACK_EDGE 11
-#define FORWARD_EDGE 12
-#define CROSS_EDGE 13
-
 using namespace std;
-
 
 class Graph {
 public:
@@ -96,52 +84,3 @@ private:
 };
 
 #endif  // GRAPH_H__
-
-/*
-
-  Node color tells us if we have discovered a node, if we're in the
-  middle of finishing a node, or if we've finished a node. They are:
-
-  WHITE: Node has not yet been reached by the search.
-
-  GRAY: Node has been reached by the search but is not yet complete.
-
-  BLACK: Node has been completely explored.
-
-
-  Edge type tells us information about how the path was discovered
-  during a depth-first search, and it also might give us valuable
-  information about the shape of the graph. There are four kinds of
-  edges, though it is not necessary to use all of them all of the
-  time. They are:
-
-  TREE: A tree edge from A to B indicates that B was discovered via A.
-
-  BACK: A back edge from C to A indicates that A was discovered before
-  C, and C was discovered while A was still being explored.
-
-  FORWARD: A forward edge from A to C indicates that C was completely
-  examined when we found it, and A is an ancestor of C in the DFS
-  spanning tree.
-
-  CROSS: A cross edge from A to C indicates the C was completely
-  examined when we found it, and A is NOT an ancestor of C in the DFS
-  spanning tree.
-
-  These edge types are summarized graphically at
-  http://en.wikipedia.org/wiki/Depth-first_search and does a much
-  better job than words can do.
-
-  To determine edge types, you need to use both the discovery
-  information (the color of the ending node) and the predecessor
-  information (to distinguish between Cross and Forward edges).
-
-  Tree edges are when the end node is white.
-
-  Back edges are when the end node is gray.
-
-  Forward and cross edges are when the end node is black. If the start
-  node is an ancestor of the end node, it is a forward edge. Otherwise
-  it is a cross edge.
-
- */

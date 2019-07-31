@@ -6,6 +6,11 @@
 
 using namespace std;
 
+// Node colors are described at the bottom of the file.
+#define WHITE 1
+#define GRAY 2
+#define BLACK 3
+
 class Node {
 private:
   string data;
@@ -77,3 +82,15 @@ public:
 };
 
 #endif  // NODE_H__
+
+/*
+
+  Node color tells us if we have discovered a node, if we're in the
+  middle of finishing a node, or if we've finished a node. They are:
+
+  WHITE: Node has not yet been reached by the search.
+
+  GRAY: Node has been reached by the search but is not yet complete.
+
+  BLACK: Node has been completely explored.
+ */
