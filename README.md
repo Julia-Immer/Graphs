@@ -92,8 +92,7 @@ Check Graphs.h file comments for detailed information for each function.
 ## Go in order
 
 I recommend that you implement the functions in the same order that
-they appear in the `points.json` file. This is the same order reported
-by `python grade.py graph_test`.
+they appear in the test file.
 
 ## Pseudocode
 
