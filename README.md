@@ -11,6 +11,10 @@ Project has following folder tree
 │   └── main.cpp  
 ├── build  
 ├── code  
+│   ├── Edge.cpp  
+│   ├── Edge.h  
+│   ├── Node.cpp  
+│   ├── Node.h  
 │   ├── Graphs.cpp  
 │   └── Graphs.h  
 └── tests  
@@ -23,10 +27,14 @@ app\                : Application folder
 main.cpp            : Application main file for your personal tests. you can use this executable to debug your own classes.  
 build\              : Build folder to build the project. your executables are gonna be here eventually.  
 code\               : all your code should be in this folder.   
-Graphs.cpp         : Graphs class source file  
-Graphs.h           : Graphs class heather file  
+Node.cpp            : Node class source file  
+Node.h              : Node class heather file  
+Edge.cpp            : Edge class source file  
+Edge.h              : Edge class heather file  
+Graphs.cpp          : Graphs class source file  
+Graphs.h            : Graphs class heather file  
 tests\              : Tests folder  
-test_Graphs.cpp    : Tests implemented for you / your personal tests  
+test_Graphs.cpp     : Tests implemented for you / your personal tests  
 
 
 
