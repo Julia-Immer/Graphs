@@ -7,6 +7,7 @@
 #include <string>
 #include <math.h>
 #include <ctime>
+#include <cmath>
 
 // in order to access private members, we have to defeat the safety
 // mechanisms. This is acceptable for unit testing, but not much
