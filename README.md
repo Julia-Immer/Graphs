@@ -38,7 +38,7 @@ test_Graphs.cpp     : Tests implemented for you / your personal tests
 
 
 
-For your final submission you submitt Graphs.cpp and Graphs.h files. Any other changes in other folders will be ignored in grading process but feel free to change them if you want to test/debug something.
+For your final submission you submitt Graphs.cpp, Graphs.h, Edge.cpp, Edge.h, Node.cpp, and Node.h files. Any other changes in other folders will be ignored in grading process but feel free to change them if you want to test/debug something.
 
 ## Where to Start
 Open a terminal window in Jupytherhub(recommended) or your personal linux/mac machine (no windows platforms). First pull the this repository by
@@ -87,7 +87,7 @@ you need **gcc** and **cmake** installed to be able to compile this code.
 if you are using vscode environment in JupyterHub, you just need to make sure you have C/C++ extension installed.
 
 ## About This homework
-Check Graphs.h file comments for detailed information for each function.
+Check Graphs.h, Edge.h, and Node.h file comments for detailed information for each function.
 
 ## Go in order
 
