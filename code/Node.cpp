@@ -33,7 +33,7 @@ void Node::setColor(int search_color, int time) {
   // TODO
 }
 
-void Node::getDiscoveryInformation(int& color, int& disco_time, 
+void Node::getDiscoveryInformation(int& thecolor, int& disco_time, 
 				   int& finish_time, int& bfs_rank) {
   // TODO
 }

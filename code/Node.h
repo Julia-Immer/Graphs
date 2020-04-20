@@ -64,7 +64,7 @@ public:
   //
   // By the way, these parameters are called 'output parameters', or
   // 'out params' because they serve as the output of the function.
-  void getDiscoveryInformation(int& color, int& disco_time, 
+  void getDiscoveryInformation(int& thecolor, int& disco_time, 
 			       int& finish_time, int& bfs_rank);
 
   // isAncestor returns true if the given node is reachable by
