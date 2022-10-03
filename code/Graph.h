@@ -28,6 +28,9 @@ public:
   set<shared_ptr<Edge>> getAdjacentEdges(shared_ptr<Node> n);
   friend std::ostream &operator << (std::ostream& out, Graph graph);
 
+  //helper function to clear and increment clock  
+  void setClock(int ctime);
+
   // clear resets all nodes to have WHITE color, with -1 discovery and
   // finish times and rank. Resets all edges to type
   // UNDISCOVERED_EDGE. It resets the graph clock to 0.

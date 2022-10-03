@@ -1,3 +1,5 @@
+//done
+
 #include "Edge.h"
 
 Edge::Edge(shared_ptr<Node> n1, shared_ptr<Node> n2) {
@@ -27,7 +29,7 @@ int Edge::getType() {
 }
 
 void Edge::setType(int edge_type) {
-  // TODO
+  type = edge_type;
 }
 
 // overloading operator << lets you put an Edge object into an output
